@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Degradiado radial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet">
+    <style>
+        body {
+            /*Degradado*/
+            background: radial-gradient(
+                farthest-side at center,
+                #19a4ca,
+                #105abb
+            );
+        }
+
+        .container {
+            margin: 10% 10%;
+            height: 300px;
+            width: 450px;
+            /* border: 1px solid rgb(0, 0, 0); */
+            backdrop-filter: brightness(70%);
+            font-family: sans-serif;
+        }
+
+        header {
+            border-bottom: 4px solid #2da4d7;
+            height: 20%;
+            color: white;
+            background-image: linear-gradient(to right,#053e87 ,#105abb, #188fc3);
+        }
+
+        header h5, h3 {
+            margin: 0;
+            padding: 5px;
+        }
+
+        header h5 b {
+            color: #00ffff;
+        }
+
+        header h3 {
+            color: white;
+            text-shadow: 0px 0px 15px #00ffff;
+        }
+
+        .container-body {
+            color: #bebebe;
+            margin-top: 0;
+            margin-left: 0;
+            margin-bottom: 0;
+            margin-right: 25%;
+        }
+
+        .container-body p {
+            margin: 8px;
+            padding: 0;
+            font-size: 13px;
+        }
+
+        .container-body img {
+            height: 100px;
+            width: 85px;
+            margin-left: 8px;
+            margin-bottom: 8px;
+            object-fit: fill;
+        }
+
+        .container-footer {
+            background: #0c4188;
+            padding: 5px;
+        }
+
+        .container-footer button {
+            font-family: 'Mouse Memoirs', sans-serif;
+            display: block;
+            margin: 6px auto;
+            height: 32px;
+            color: linear-gradient(to bottom, red, orange);
+            font-size: 21px;
+            background-color: #94dcfb;
+            border: solid 3px #d2f2ff;
+        }
+
+        .container-footer button b {
+            color: #0f2848;
+        }
+
+        .container-footer button:hover {
+            border: solid 3px #fff9b7;
+            background-image: linear-gradient(to bottom, #f9cb02, #fdf170);
+        }   
+
+        .container-footer .img img{
+            height: 22px;
+        }
+
+        .container-footer .img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 28px;
+        }
+
+        .container-footer b {
+            margin-left: 4px;
+            font-size: 21px;
+            color: white;
+            font-family: 'Mouse Memoirs', sans-serif;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h5><b>RARO</b> | MOCHILA RETRO</h5>
+            <h3>ALAS HOLOCÁUTICAS</h3>
+        </header>
+        <div class="container-body">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos harum ut quod hic possimus a, minus laborum obcaecati rem similique!
+            </p>
+            <img src="/img/fotazaPeliBlanco.jpg" alt="">
+            <img src="/img/Red-Boy.jpg" alt="">+
+        </div>
+        <div class="container-footer">
+            <div class="img">
+                <img src="/img/pavos.png" alt="">
+                <b>1200</b>
+            </div>
+            <button><b>CONSEGUIR MONEDAS V</b></button>
+            <button><b>VISTA PREVIA DE ESTILOS</b></button>
+            <button><b>COMPRAR COMO REGALO</b></button>
+        </div>
+        
+        
+    </div>
+</body>
+</html>

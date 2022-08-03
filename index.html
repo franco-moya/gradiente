@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradientes en CSS</title>
+    <style>
+        body {
+            /* background-color: black; */
+            /* background-image: linear-gradient(to left, #1666D2, #1cb5e0, #1666D2); */
+            background-image: radial-gradient(circle at center, #1cb5e0 0%, #1666D2 100%);
+            font-family: sans-serif;
+            backdrop-filter: brightness(60%);
+            /* filter: blur(4px); */
+        }
+
+        main {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        section {
+            padding: 24px 0;
+            border-bottom: 1px solid white;
+        }
+
+        .button {
+            padding: 16px 32px;
+            font-size: 24px;
+            font-weight: 700;
+            background: transparent;
+            border: 2px solid white;
+            border-radius: 30px;
+            text-transform: uppercase;
+            color: white;
+        }
+
+        .gradient {
+            border: 0;
+            background-image: linear-gradient(to top right, red, orange); /*to dirección, color inicial, color final*/
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <section>
+            <button class="button outline">Registrate gratis</button>
+            <button class="button gradient">Obtén premium</button>
+        </section>
+    </main>
+
+</body>
+</html>
